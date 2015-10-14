@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_group_work_white_24dp"
+            android:title="主页"/>
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_vertical_align_top_white_24dp"
+            android:title="我的关注"/>
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_add_shopping_cart"
+            android:title="训练计划"/>
+        <item
+            android:id="@+id/nav_discussion"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="专家建议"/>
+    </group>
+
+    <item android:title="Version">
+        <menu>
+            <item
+                android:icon="@drawable/ic_arrow_back_white_18dp"
+                android:title="个人资料"/>
+            <item
+                android:icon="@drawable/ic_home_white_24dp"
+                android:title="退出"/>
+        </menu>
+    </item>
+
+</menu>

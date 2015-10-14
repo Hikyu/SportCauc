@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"></include>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator_default"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp" />
+    </RelativeLayout>
+
+    <com.truizlop.fabreveallayout.FABRevealLayout
+        android:id="@+id/fab_reveal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_white_24dp"
+            app:backgroundTint="#1E88E5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/main_small_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="mainGradebtnOnclick"
+                    android:text="小学"
+                    fbutton:buttonColor="#1abc9c"
+                    fbutton:cornerRadius="5dp"
+                    fbutton:shadowColor="#ffffff"
+                    fbutton:shadowEnabled="true"
+                    fbutton:shadowHeight="5dp"
+
+                    />
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/main_middle_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="中学"
+                    fbutton:buttonColor="#2ecc71"
+                    fbutton:cornerRadius="5dp"
+                    fbutton:shadowColor="#ffffff"
+                    fbutton:shadowEnabled="true"
+                    fbutton:shadowHeight="5dp"
+
+                    />
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/main_large_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="大学"
+                    fbutton:buttonColor="#9b59b6"
+                    fbutton:cornerRadius="5dp"
+                    fbutton:shadowColor="#ffffff"
+                    fbutton:shadowEnabled="true"
+                    fbutton:shadowHeight="5dp"
+
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/main_search_layout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/main_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/main_search_edit"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_bg"
+                    android:gravity="center" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.dd.CircularProgressButton
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/main_search_input"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:id="@+id/circularButton1"
+                android:layout_marginTop="16dp"
+                android:textColor="#0ffff0"
+                android:textSize="18sp"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_paddingProgress="10dp"
+                app:cpb_textComplete="成功"
+                app:cpb_textError="搜索失败"
+                app:cpb_textIdle="搜索" />
+
+        </RelativeLayout>
+
+    </com.truizlop.fabreveallayout.FABRevealLayout>
+</LinearLayout>

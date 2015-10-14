@@ -1,0 +1,15 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowAnimationStyle">@style/ActivitySwitchAnim</item>-->
+    </style>
+
+    <style name="ActivitySwitchAnim">
+        <item name="@android:activityOpenEnterAnimation">@anim/zoomin</item>
+        <item name="@android:activityOpenExitAnimation">@anim/zoomout</item>
+    </style>
+
+
+
+</resources>

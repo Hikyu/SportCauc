@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="16dp"
+            android:text="跳远"
+            android:textSize="40sp" />
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="跳远，又名急行跳远，田径运动跳跃项目。由助跑、起跳、腾空和落地等动作组合而成。运动员沿直线助跑，在起跳板前沿线后用单足起跳，经腾空阶段
+        ，然后用双足在沙坑落地。比赛时以跳的远度决定名次 。
+        跳远是最古老的竞技项目之一，在古希腊奥林匹克的“五项运动”中就有跳远。
+据史料记载，首次正式的跳远比赛是在公元前708年举行的，距今已有2600多年的历史。当时跳远的设施非常简单，只是把地面的土质刨松，然后在前面放一条门槛代替起跳板。为避免落地时产生伤害事故，以后用沙坑代替了松土。
+ "/>
+
+    </LinearLayout>
+</RelativeLayout>
